@@ -68,7 +68,7 @@ cp -f /home/site/DigiCertGlobalRootG2.crt.pem /home/site/wwwroot/storage/certs/a
 
 # --- 4. LARAVEL OPTIMIZATION ---
 echo "Running Laravel setup..."
-php artisan migrate --foce --seed
+php artisan migrate --force --seed
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
