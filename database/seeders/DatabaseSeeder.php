@@ -26,9 +26,8 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
         ]);
 
-        Payment::factory(20)->create();
-        User::factory(10)->create();
-        Homeowner::factory(10)->create();
+        $this->call(HomeownerSeeder::class);
+        Homeowner::factory(3)->create();
         Tradie::factory(10)->create();
         // Seed bookings after homeowners, tradies and services exist
         $this->call(BookingSeeder::class);
