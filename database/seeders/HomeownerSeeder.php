@@ -12,9 +12,6 @@ class HomeownerSeeder extends Seeder
      */
     public function run(): void
     {
-        // Create 10 homeowners using the HomeownerFactory
-        Homeowner::factory()
-            ->count(10)
-            ->create();
+
     }
 }
